@@ -81,16 +81,16 @@ h2, h3, h4 {
 </style>
 
 <div id="samples" class="colContainer">
-<a href="/docs/getting-started-guides/meanstack/" class="shadowbox">
-  <img src="/images/docs/meanstack/image_0.png"><br/>MEAN Stack
+<a href="https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/getting-started-guides/meanstack.md" class="shadowbox">
+  <img src="https://github.com/kubernetes/kubernetes.github.io/blob/master/images/docs/meanstack/image_0.png"><br/>MEAN Stack
 </a>
-<a href="https://github.com/kubernetes/kubernetes/tree/{{page.githubbranch}}/examples/guestbook" target="_blank" class="shadowbox">
-  <img src="/images/docs/redis.svg"><br/>Guestbook + Redis
+<a href="https://github.com/kubernetes/kubernetes/tree/master/examples/guestbook" target="_blank" class="shadowbox">
+  <img src="https://github.com/kubernetes/kubernetes.github.io/blob/master/images/docs/redis.svg"><br/>Guestbook + Redis
 </a>
-<a href="https://github.com/kubernetes/kubernetes/tree/{{page.githubbranch}}/examples/storage/cassandra" target="_blank" class="shadowbox">
-  <img src="/images/docs/cassandra.svg"><br/>Cloud Native Cassandra
+<a href="https://github.com/kubernetes/kubernetes/tree/master/examples/storage/cassandra" target="_blank" class="shadowbox">
+  <img src="https://github.com/kubernetes/kubernetes.github.io/blob/master/images/docs/cassandra.svg"><br/>Cloud Native Cassandra
 </a>
-<a href="https://github.com/kubernetes/kubernetes/tree/{{page.githubbranch}}/examples/mysql-wordpress-pd/" target="_blank" class="shadowbox">
-  <img src="/images/docs/wordpress.svg"><br/>WordPress + MySQL
+<a href="https://github.com/kubernetes/kubernetes/tree/master/examples/mysql-wordpress-pd" target="_blank" class="shadowbox">
+  <img src="https://github.com/kubernetes/kubernetes.github.io/blob/master/images/docs/wordpress.svg"><br/>WordPress + MySQL
 </a>
 </div>
