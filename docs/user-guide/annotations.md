@@ -5,7 +5,7 @@ assignees:
 title: Annotations
 ---
 
-We have [labels](/docs/user-guide/labels) for identifying metadata.
+We have [labels](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/labels.md) for identifying metadata.
 
 It is also useful to be able to attach arbitrary non-identifying metadata, for retrieval by API clients such as tools, libraries, etc. This information may be large, may be structured or unstructured, may include characters not permitted by labels, etc. Such information would not be used for object selection and therefore doesn't belong in labels.
 
