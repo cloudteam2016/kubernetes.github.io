@@ -93,9 +93,9 @@ web server:
 {% endcapture %}
 
 {% capture whatsnext %}
-* Learn about [writing a new topic](/docs/contribute/write-new-topic/).
-* Learn about [using page templates](/docs/contribute/page-templates/).
-* Learn about [creating a pull request](/docs/contribute/create-pull-request/).
+* Learn about [writing a new topic](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/write-new-topic/).
+* Learn about [using page templates](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/page-templates/).
+* Learn about [creating a pull request](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/create-pull-request/).
 {% endcapture %}
 
 {% include templates/task.md %}
