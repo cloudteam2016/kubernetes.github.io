@@ -50,7 +50,7 @@ Summary of container benefits:
 * **Environmental consistency across development, testing, and production**:
     Runs the same on a laptop as it does in the cloud.
 * **Cloud and OS distribution portability**:
-    Runs on Ubuntu, RHEL, CoreOS, on-prem, Google Container Engine, and anywhere else.
+    Runs on Ubuntu, RHEL, CoreOS, On-prem, Google Container Engine, and anywhere else.
 * **Application-centric management**:
     Raises the level of abstraction from running an OS on virtual hardware to running an application on an OS using logical resources.
 * **Loosely coupled, distributed, elastic, liberated [micro-services](http://martinfowler.com/articles/microservices.html)**:
@@ -99,7 +99,7 @@ This [design](https://github.com/kubernetes/kubernetes/blob/{{page.githubbranch}
 Kubernetes is not a traditional, all-inclusive PaaS (Platform as a Service) system. We preserve user choice where it is important.
 
 * Kubernetes does not limit the types of applications supported. It does not dictate application frameworks (e.g., [Wildfly](http://wildfly.org/)), restrict the set of supported language runtimes (e.g., Java, Python, Ruby), cater to only [12-factor applications](http://12factor.net/), nor distinguish "apps" from "services". Kubernetes aims to support an extremely diverse variety of workloads, including stateless, stateful, and data-processing workloads. If an application can run in a container, it should run great on Kubernetes.
-* Kubernetes does not provide middleware (e.g., message buses), data-processing frameworks (e.g., Spark), databases (e.g., mysql), nor cluster storage systems (e.g., Ceph) as built-in services. Such applications run on Kubernetes.
+* Kubernetes does not provide middleware (e.g., message buses), data-processing frameworks (e.g., Spark), databases (e.g., MySQL), nor cluster storage systems (e.g., Ceph) as built-in services. Such applications run on Kubernetes.
 * Kubernetes does not have a click-to-deploy service marketplace.
 * Kubernetes is unopinionated in the source-to-image space. It does not deploy source code and does not build your application. Continuous Integration (CI) workflow is an area where different users and projects have their own requirements and preferences, so we support layering CI workflows on Kubernetes but don't dictate how it should work.
 * Kubernetes allows users to choose the logging, monitoring, and alerting systems of their choice. (Though we do provide some integrations as proof of concept.)
