@@ -75,7 +75,7 @@ Here's an interesting thing to know about the steps you just did.
 
 <p>Here's an example of a published topic that uses the task template:</p>
 
-<p><a href="/docs/tasks/access-kubernetes-api/http-proxy-access-api">Using an HTTP Proxy to Access the Kubernetes API</a></p>
+<p><a href="https://github.com/kubernetes/kubernetes.github.io/docs/tasks/access-kubernetes-api/http-proxy-access-api">Using an HTTP Proxy to Access the Kubernetes API</a></p>
 
 <h3 id="tutorial_template">Tutorial template</h3>
 
@@ -151,7 +151,7 @@ Here's something interesting about the code you ran in the preceding steps.
 
 <p>Here's an example of a published topic that uses the tutorial template:</p>
 
-<p><a href="/docs/tutorials/stateless-application/run-stateless-application-deployment/">Running a Stateless Application Using a Deployment</a></p>
+<p><a href="https://github.com/kubernetes/kubernetes.github.io/docs/tutorials/stateless-application/run-stateless-application-deployment/">Running a Stateless Application Using a Deployment</a></p>
 
 <h3 id="concept_template">Concept template</h3>
 
@@ -202,7 +202,7 @@ To use ...
 
 <p>Here's an example of a published topic that uses the concept template:</p>
 
-<p><a href="/docs/concepts/object-metadata/annotations">Annotations</a></p>
+<p><a href="https://github.com/kubernetes/kubernetes.github.io/docs/concepts/object-metadata/annotations">Annotations</a></p>
 
 <!--</body>
 </html>-->
