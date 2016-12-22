@@ -9,8 +9,8 @@ propose changes to this document in a pull request.
 
 For additional information on creating new content for the Kubernetes
 docs, follow the instructions on
-[using page templates](/docs/contribute/page-templates/) and
-[creating a documentation pull request](/docs/contribute/create-pull-request/).
+[using page templates](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/page-templates/) and
+[creating a documentation pull request](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/create-pull-request/).
 {% endcapture %}
 
 {% capture body %}
@@ -206,10 +206,10 @@ considered new in a few months.
 
 
 {% capture whatsnext %}
-* Learn about [writing a new topic](/docs/contribute/write-new-topic/).
-* Learn about [using page templates](/docs/contribute/page-templates/).
-* Learn about [staging your changes](/docs/contribute/stage-documentation-changes/)
-* Learn about [creating a pull request](/docs/contribute/create-pull-request/).
+* Learn about [writing a new topic](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/write-new-topic/).
+* Learn about [using page templates](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/page-templates/).
+* Learn about [staging your changes](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/stage-documentation-changes/)
+* Learn about [creating a pull request](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/create-pull-request/).
 {% endcapture %}
 
 {% include templates/concept.md %}
