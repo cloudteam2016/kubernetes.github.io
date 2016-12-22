@@ -11,7 +11,7 @@ objects.
 ## Configuration: high-level goals
 
 Access Control: give *only* kube-apiserver read/write access to etcd. You do not
-want apiserver's etcd exposed to every node in your cluster (or worse, to the
+want APIserver's etcd exposed to every node in your cluster (or worse, to the
 internet at large), because access to etcd is equivalent to root in your
 cluster.
 
