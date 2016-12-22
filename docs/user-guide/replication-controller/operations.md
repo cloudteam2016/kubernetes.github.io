@@ -11,7 +11,7 @@ A replication controller ensures that a specified number of pod "replicas" are
 running at any one time. If there are too many, it will kill some. If there are
 too few, it will start more.
 
-## Creating a replication controller
+## Creating  replication controllers
 
 Replication controllers are created with `kubectl create`:
 
@@ -31,7 +31,7 @@ A successful create request returns the name of the replication controller. To
 view more details about the controller, see
 [Viewing replication controllers](#viewing_replication_controllers) below.
 
-### Replication controller configuration file
+### Replication controller configuration files
 
 When creating a replication controller, you must point to a configuration file
 as the value of the `-f` flag. The configuration
@@ -104,12 +104,12 @@ below:
 * The entire `spec` schema is documented in the
   [Kubernetes API reference](/docs/api-reference/v1/definitions/#_v1_podspec).
 
-### Sample file
+### The Sample file
 
 The following sample file creates 2 pods, each containing a single container
 using the `redis` image. Port 80 on each container is opened. The replication
 controller is tagged with the `serving` label. The pods are given the label
-`frontend` and the `selector` is set to `frontend`, to indicate that the
+`frontend` and the `selector` is set to `frontend` to indicate that the
 controller should manage pods with the `frontend` label.
 
 ```json
@@ -160,7 +160,7 @@ controller should manage pods with the `frontend` label.
 
 See [Rolling Updates](/docs/user-guide/rolling-updates/).
 
-## Resizing a replication controller
+## Resizing  replication controllers
 
 See
 [Resizing a replication controller](/docs/user-guide/resizing-a-replication-controller/).
