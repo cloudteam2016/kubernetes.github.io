@@ -9,7 +9,7 @@ to the Kubernetes documentation.
 
 {% capture prerequisites %}
 Create a fork of the Kubernetes documentation repository as described in
-[Creating a Documentation Pull Request](/docs/contribute/create-pull-request/).
+[Creating a Documentation Pull Request](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/create-pull-request/).
 {% endcapture %}
 
 {% capture steps %}
