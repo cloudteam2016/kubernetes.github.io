@@ -54,7 +54,7 @@ Currently, all certificates issued have one year validity and a default set of k
 
 ### Signing assets 
 You must provide a Certificate Authority in order to provide the cryptographic materials necessary to issue certificates. 
-This CA should be trusted by the apiserver for authentication with the `--client-ca-file=SOMEFILE` flag. The management
+This CA should be trusted by the APIserver for authentication with the `--client-ca-file=SOMEFILE` flag. The management
 of the CA is beyond the scope of this document but it is recommended that you generate a dedicated CA for Kubernetes.
 Both certificate and key are assumed to be PEM-encoded. 
 

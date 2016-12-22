@@ -14,7 +14,7 @@ This is a lightweight version of a broader Cluster Federation feature (previousl
 nickname ["Ubernetes"](https://github.com/kubernetes/kubernetes/blob/master/docs/proposals/federation.md)).
 Full Cluster Federation allows combining separate
 Kubernetes clusters running in different regions or cloud providers
-(or on-premise data centers).  However, many
+(or On-premise data centers).  However, many
 users simply want to run a more available Kubernetes cluster in multiple zones
 of their single cloud provider, and this is what the multizone support in 1.2 allows
 (this previously went by the nickname "Ubernetes Lite").
@@ -36,7 +36,7 @@ zone information.
 
 Kubernetes will automatically spread the pods in a replication controller
 or service across nodes in a single-zone cluster (to reduce the impact of
-failures.)  With multiple-zone clusters, this spreading behaviour is
+failures.)  With multiple-zone clusters, this spreading behavior is
 extended across zones (to reduce the impact of zone failures.)  (This is
 achieved via `SelectorSpreadPriority`).  This is a best-effort
 placement, and so if the zones in your cluster are heterogeneous
