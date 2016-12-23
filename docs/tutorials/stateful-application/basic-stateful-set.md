@@ -11,7 +11,7 @@ title: StatefulSet Basics
 ---
 
 {% capture overview %}
-This tutorial provides an introduction to managing applications with
+This tutorial provides an introduction to manage applications with
 [StatefulSets](/docs/concepts/abstractions/controllers/statefulsets/). It 
 demonstrates how to create, delete, scale, and update the container image of a 
 StatefulSet.
@@ -31,7 +31,7 @@ following Kubernetes concepts.
 
 This tutorial assumes that your cluster is configured to dynamically provision 
 PersistentVolumes. If your cluster is not configured to do so, you
-will have to manually provision five 1 GiB volumes prior to starting this 
+will have to manually provide five 1 GiB volumes prior to start this 
 tutorial.
 {% endcapture %}
 
