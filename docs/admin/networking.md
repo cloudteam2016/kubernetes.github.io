@@ -38,7 +38,7 @@ review the "normal" way that networking works with Docker.  By default, Docker
 uses host-private networking.  It creates a virtual bridge, called `docker0` by
 default, and allocates a subnet from one of the private address blocks defined
 in [RFC1918](https://tools.ietf.org/html/rfc1918) for that bridge.  For each
-container that Docker creates, it allocates a virtual ethernet device (called
+container that Docker creates, it allocates a virtual Ethernet device (called
 `veth`) which is attached to the bridge. The veth is mapped to appear as `eth0`
 in the container, using Linux namespaces.  The in-container `eth0` interface is
 given an IP address from the bridge's address range.
@@ -121,7 +121,7 @@ routing](https://cloud.google.com/compute/docs/networking#routing) to
 assign each VM a subnet (default is `/24` - 254 IPs).  Any traffic bound for that
 subnet will be routed directly to the VM by the GCE network fabric.  This is in
 addition to the "main" IP address assigned to the VM, which is NAT'ed for
-outbound internet access.  A linux bridge (called `cbr0`) is configured to exist
+outbound internet access.  A Linux bridge (called `cbr0`) is configured to exist
 on that subnet, and is passed to docker's `--bridge` flag.
 
 We start Docker with:
@@ -157,7 +157,7 @@ sysctl net.ipv4.ip_forward=1
 The result of all this is that all `Pods` can reach each other and can egress
 traffic to the internet.
 
-### L2 networks and linux bridging
+### L2 networks and Linux bridging
 
 If you have a "dumb" L2 network, such as a simple switch in a "bare-metal"
 environment, you should be able to do something similar to the above GCE setup.

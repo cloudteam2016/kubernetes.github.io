@@ -134,7 +134,7 @@ Please note that creation and removal of load balancer are complex operations an
 
 ### Master service & kubelets
 
-Instead of trying to keep an up-to-date list of Kubernetes apiserver in the Kubernetes service,
+Instead of trying to keep an up-to-date list of Kubernetes APIserver in the Kubernetes service,
 the system directs all traffic to the external IP:
 
 * in one master cluster the IP points to the single master,

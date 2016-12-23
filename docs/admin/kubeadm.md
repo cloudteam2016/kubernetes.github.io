@@ -55,8 +55,8 @@ the flag multiple times.
 ### `kubeadm init`
 
 It is usually sufficient to run `kubeadm init` without any flags,
-but in some cases you might like to override the default behaviour.
-Here we specify all the flags that can be used to customise the Kubernetes
+but in some cases you might like to override the default behavior.
+Here we specify all the flags that can be used to customize the Kubernetes
 installation.
 
 - `--api-advertise-addresses` (multiple values are allowed)

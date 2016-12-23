@@ -11,7 +11,7 @@ In Kubernetes, authorization happens as a separate step from authentication.
 See the [Accessing Control Overview](/docs/admin/accessing-the-api/) for an
 overview of how authentication and authorization are applied to requests.
 
-Authorization applies to all HTTP accesses on the main (secure) apiserver port.
+Authorization applies to all HTTP accesses on the main (secure) APIserver port.
 
 The authorization check for any request compares attributes of the context of
 the request, (such as user, resource, and namespace) with access
@@ -193,7 +193,7 @@ file:
 {"apiVersion":"abac.authorization.kubernetes.io/v1beta1","kind":"Policy","spec":{"user":"system:serviceaccount:kube-system:default","namespace":"*","resource":"*","apiGroup":"*"}}
 ```
 
-The apiserver will need to be restarted to pickup the new policy lines.
+The APIserver will need to be restarted to pickup the new policy lines.
 
 ## RBAC Mode
 

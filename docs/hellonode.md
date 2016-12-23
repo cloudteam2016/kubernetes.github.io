@@ -250,7 +250,7 @@ At this point you should have our container running under the control of Kuberne
 
 By default, the pod is only accessible by its internal IP within the Kubernetes cluster. In order to make the `hello-node` container accessible from outside the Kubernetes virtual network, you have to expose the Pod as a Kubernetes **[Service](/docs/user-guide/services/)**.
 
-From our Development machine we can expose the pod to the public internet using the `kubectl expose` command combined with the `--type="LoadBalancer"` flag.  The flag is needed for the creation of an externally accessible ip:
+From our Development machine we can expose the pod to the public internet using the `kubectl expose` command combined with the `--type="LoadBalancer"` flag.  The flag is needed for the creation of an externally accessible IP:
 
 ```shell
 kubectl expose deployment hello-node --type="LoadBalancer"
@@ -262,7 +262,7 @@ The flag used in this command specifies that we'll be using the load-balancer pr
 
 The Kubernetes master creates the load balancer and related Compute Engine forwarding rules, target pools, and firewall rules to make the service fully accessible from outside of Google Cloud Platform.
 
-To find the ip addresses associated with the service run:
+To find the IP addresses associated with the service run:
 
 ```shell
 kubectl get services hello-node

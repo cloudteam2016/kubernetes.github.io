@@ -78,7 +78,7 @@ The namespace and API group attributes are always an empty string, and
 the resource name is always the name of the kubelet's `Node` API object.
 
 When running in this mode, ensure the user identified by the `--kubelet-client-certificate` and `--kubelet-client-key`
-flags passed to the apiserver is authorized for the following attributes:
+flags passed to the APIserver is authorized for the following attributes:
 
 * verb=\*, resource=nodes, subresource=proxy
 * verb=\*, resource=nodes, subresource=stats

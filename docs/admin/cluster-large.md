@@ -50,7 +50,7 @@ To improve performance of large clusters, we store events in a separate dedicate
 When creating a cluster, existing salt scripts:
 
 * start and configure additional etcd instance
-* configure api-server to use it for storing events
+* configure APIserver to use it for storing events
 
 ### Size of master and master components
 

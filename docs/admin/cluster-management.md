@@ -92,7 +92,7 @@ an extended period of time (10min but it may change in the future).
 Cluster autoscaler is configured per instance group (GCE) or node pool (GKE).
 
 If you are using GCE then you can either enable it while creating a cluster with kube-up.sh script. 
-To configure cluser autoscaler you have to set 3 environment variables:
+To configure cluster autoscaler you have to set 3 environment variables:
 
 * `KUBE_ENABLE_CLUSTER_AUTOSCALER` - it enables cluster autoscaler if set to true.
 * `KUBE_AUTOSCALER_MIN_NODES` - minimum number of nodes in the cluster.
@@ -163,7 +163,7 @@ When a new API version is released, you may need to upgrade a cluster to support
 
 This is an infrequent event, but it requires careful management. There is a sequence of steps to upgrade to a new API version.
 
-   1. Turn on the new api version.
+   1. Turn on the new API version.
    1. Upgrade the cluster's storage to use the new version.
    1. Upgrade all config files. Identify users of the old API version endpoints.
    1. Update existing objects in the storage to new version by running `cluster/update-storage-objects.sh`.

@@ -30,7 +30,7 @@ coming to the server. Each audit log contains two entries:
 
 1. The request line containing:
     - unique id allowing to match the response line (see 2)
-    - source ip of the request
+    - source IP of the request
     - HTTP method being invoked
     - original user invoking the operation
     - impersonated user for the operation

@@ -51,17 +51,17 @@ Root causes:
 
 Specific scenarios:
 
-  - Apiserver VM shutdown or apiserver crashing
+  - APIserver VM shutdown or APIserver crashing
     - Results
       - unable to stop, update, or start new pods, services, replication controller
       - existing pods and services should continue to work normally, unless they depend on the Kubernetes API
-  - Apiserver backing storage lost
+  - APIserver backing storage lost
     - Results
-      - apiserver should fail to come up
+      - APIserver should fail to come up
       - kubelets will not be able to reach it but will continue to run the same pods and provide the same service proxying
-      - manual recovery or recreation of apiserver state necessary before apiserver is restarted
+      - manual recovery or recreation of APIserver state necessary before APIserver is restarted
   - Supporting services (node controller, replication controller manager, scheduler, etc) VM shutdown or crashes
-    - currently those are colocated with the apiserver, and their unavailability has similar consequences as apiserver
+    - currently those are colocated with the APIserver, and their unavailability has similar consequences as APIserver
     - in future, these will be replicated as well and may not be co-located
     - they do not have their own persistent state
   - Individual node (VM or physical machine) shuts down
@@ -69,7 +69,7 @@ Specific scenarios:
       - pods on that Node stop running
   - Network partition
     - Results
-      - partition A thinks the nodes in partition B are down; partition B thinks the apiserver is down. (Assuming the master VM ends up in partition A.)
+      - partition A thinks the nodes in partition B are down; partition B thinks the APIserver is down. (Assuming the master VM ends up in partition A.)
   - Kubelet software fault
     - Results
       - crashing kubelet cannot start new pods on the node
@@ -79,27 +79,27 @@ Specific scenarios:
   - Cluster operator error
     - Results
       - loss of pods, services, etc
-      - lost of apiserver backing store
+      - lost of APIserver backing store
       - users unable to read API
       - etc.
 
 Mitigations:
 
 - Action: Use IaaS provider's automatic VM restarting feature for IaaS VMs
-  - Mitigates: Apiserver VM shutdown or apiserver crashing
+  - Mitigates: APIserver VM shutdown or APIserver crashing
   - Mitigates: Supporting services VM shutdown or crashes
 
-- Action use IaaS providers reliable storage (e.g GCE PD or AWS EBS volume) for VMs with apiserver+etcd
-  - Mitigates: Apiserver backing storage lost
+- Action use IaaS providers reliable storage (e.g GCE PD or AWS EBS volume) for VMs with APIserver+etcd
+  - Mitigates: APIserver backing storage lost
 
 - Action: Use (experimental) [high-availability](/docs/admin/high-availability) configuration
   - Mitigates: Master VM shutdown or master components (scheduler, API server, controller-managing) crashing
     - Will tolerate one or more simultaneous node or component failures
-  - Mitigates: Apiserver backing storage (i.e., etcd's data directory) lost
+  - Mitigates: APIserver backing storage (i.e., etcd's data directory) lost
     - Assuming you used clustered etcd.
 
-- Action: Snapshot apiserver PDs/EBS-volumes periodically
-  - Mitigates: Apiserver backing storage lost
+- Action: Snapshot APIserver PDs/EBS-volumes periodically
+  - Mitigates: APIserver backing storage lost
   - Mitigates: Some cases of operator error
   - Mitigates: Some cases of Kubernetes software fault
 
