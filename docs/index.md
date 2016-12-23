@@ -5,7 +5,7 @@ assignees:
 title: Kubernetes Documentation
 ---
 
-<p>Kubernetes documentation can help you set up Kubernetes, learn about the system, or get your applications and workloads running on Kubernetes. To learn the basics of what Kubernetes is and how it works, read "<a href="/docs/whatisk8s/">What is Kubernetes</a>". </p>
+<p>Kubernetes documentation can help you set up Kubernetes, learn about the system, or get your applications and workloads running on Kubernetes. To learn the basics of what Kubernetes is and how it works, read "<a href="https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/whatisk8s.md">What is Kubernetes</a>". </p>
 
 <h2>Interactive Tutorial</h2>
 
@@ -17,9 +17,9 @@ title: Kubernetes Documentation
 
 <p>Other/newer ways to set up a Kubernetes cluster include:</p>
 <ul>
-<li><a href="/docs/getting-started-guides/minikube/">Minikube</a>: Install a single-node Kubernetes cluster on your local machine for development and testing.</li>
-<li><a href="/docs/getting-started-guides/kops/">Installing Kubernetes on AWS with kops</a>: Bring up a complete Kubernetes cluster on Amazon Web Services, using a tool called <code>kops</code>.</li>
-<li><a href="/docs/getting-started-guides/kubeadm/">Installing Kubernetes on Linux with kubeadm</a> (Alpha): Install a secure Kubernetes cluster on any pre-existing machines running Linux, using the built-in <code>kubeadm</code> tool.</li>
+<li><a href="https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/getting-started-guides/minikube.md/">Minikube</a>: Install a single-node Kubernetes cluster on your local machine for development and testing.</li>
+<li><a href="https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/getting-started-guides/kops.md">Installing Kubernetes on AWS with kops</a>: Bring up a complete Kubernetes cluster on Amazon Web Services, using a tool called <code>kops</code>.</li>
+<li><a href="https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/getting-started-guides/kubeadm.md/">Installing Kubernetes on Linux with kubeadm</a> (Alpha): Install a secure Kubernetes cluster on any pre-existing machines running Linux, using the built-in <code>kubeadm</code> tool.</li>
 </ul>
 
 <h2>Guides, Tutorials, Tasks, and Concepts</h2>
@@ -34,7 +34,7 @@ title: Kubernetes Documentation
 
 <h2>API and Command References</h2>
 
-<p>The <a href="/docs/reference/">reference</a> documentation provides complete information on the Kubernetes APIs and the <code>kubectl</code> command-line interface.</p>
+<p>The <a href="https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/reference.md">reference</a> documentation provides complete information on the Kubernetes APIs and the <code>kubectl</code> command-line interface.</p>
 
 <h2>Tools</h2>
 

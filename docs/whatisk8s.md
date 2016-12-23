@@ -30,7 +30,7 @@ The Kubernetes project was started by Google in 2014. Kubernetes builds upon a [
 
 Looking for reasons why you should be using [containers](http://aucouranton.com/2014/06/13/linux-containers-parallels-lxc-openvz-docker-and-more/)?
 
-![Why Containers?](/images/docs/why_containers.svg)
+![Why Containers?](https://github.com/kubernetes/kubernetes.github.io/blob/master/images/docs/why_containers.svg)
 
 The *Old Way* to deploy applications was to install the applications on a host using the operating system package manager. This had the disadvantage of entangling the applications' executables, configuration, libraries, and lifecycles with each other and with the host OS. One could build immutable virtual-machine images in order to achieve predictable rollouts and rollbacks, but VMs are heavyweight and non-portable.
 
@@ -67,18 +67,18 @@ At a minimum, Kubernetes can schedule and run application containers on clusters
 Kubernetes satisfies a number of common needs of applications running in production, such as:
 
 * [co-locating helper processes](/docs/user-guide/pods/), facilitating composite applications and preserving the one-application-per-container model,
-* [mounting storage systems](/docs/user-guide/volumes/),
+* [mounting storage systems](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/volumes.md),
 * [distributing secrets](/docs/user-guide/secrets/),
-* [application health checking](/docs/user-guide/production-pods/#liveness-and-readiness-probes-aka-health-checks),
+* [application health checking](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/production-pods.md/#liveness-and-readiness-probes-aka-health-checks),
 * [replicating application instances](/docs/user-guide/replication-controller/),
 * [horizontal auto-scaling](/docs/user-guide/horizontal-pod-autoscaling/),
-* [naming and discovery](/docs/user-guide/connecting-applications/),
+* [naming and discovery](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/connecting-applications.md),
 * [load balancing](/docs/user-guide/services/),
 * [rolling updates](/docs/user-guide/update-demo/),
-* [resource monitoring](/docs/user-guide/monitoring/),
-* [log access and ingestion](/docs/user-guide/logging/),
-* [support for introspection and debugging](/docs/user-guide/introspection-and-debugging/), and
-* [identity and authorization](/docs/admin/authorization/).
+* [resource monitoring](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/monitoring.md),
+* [log access and ingestion](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/logging.md),
+* [support for introspection and debugging](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/introspection-and-debugging.md), and
+* [identity and authorization](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/admin/authorization.md).
 
 This provides the simplicity of Platform as a Service (PaaS) with the flexibility of Infrastructure as a Service (IaaS), and facilitates portability across infrastructure providers.
 
@@ -88,11 +88,11 @@ For more details, see the [user guide](/docs/user-guide/).
 
 Even though Kubernetes provides a lot of functionality, there are always new scenarios that would benefit from new features. Application-specific workflows can be streamlined to accelerate developer velocity. Ad hoc orchestration that is acceptable initially often requires robust automation at scale. This is why Kubernetes was also designed to serve as a platform for building an ecosystem of components and tools to make it easier to deploy, scale, and manage applications.
 
-[Labels](/docs/user-guide/labels/) empower users to organize their resources however they please. [Annotations](/docs/user-guide/annotations/) enable users to decorate resources with custom information to facilitate their workflows and provide an easy way for management tools to checkpoint state.
+[Labels](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/labels.md) empower users to organize their resources however they please. [Annotations](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/annotations.md/) enable users to decorate resources with custom information to facilitate their workflows and provide an easy way for management tools to checkpoint state.
 
-Additionally, the [Kubernetes control plane](/docs/admin/cluster-components) is built upon the same [APIs](/docs/api/) that are available to developers and users. Users can write their own controllers, [schedulers](https://github.com/kubernetes/kubernetes/tree/{{page.githubbranch}}/docs/devel/scheduler.md), etc., if they choose, with [their own APIs](https://github.com/kubernetes/kubernetes/blob/{{page.githubbranch}}/docs/design/extending-api.md) that can be targeted by a general-purpose [command-line tool](/docs/user-guide/kubectl-overview/).
+Additionally, the [Kubernetes control plane](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/admin/cluster-components.md) is built upon the same [APIs](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/api.md) that are available to developers and users. Users can write their own controllers, [schedulers](https://github.com/kubernetes/community/blob/master/contributors/devel/scheduler.md), etc., if they choose, with [their own APIs](https://github.com/kubernetes/kubernetes/blob/master/docs/design/extending-api.md) that can be targeted by a general-purpose [command-line tool](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/kubectl-overview.md/).
 
-This [design](https://github.com/kubernetes/kubernetes/blob/{{page.githubbranch}}/docs/design/principles.md) has enabled a number of other systems to build atop Kubernetes.
+This [design](https://github.com/kubernetes/kubernetes/blob/master/docs/design/principles.md) has enabled a number of other systems to build atop Kubernetes.
 
 #### Kubernetes is not:
 
@@ -106,7 +106,7 @@ Kubernetes is not a traditional, all-inclusive PaaS (Platform as a Service) syst
 * Kubernetes does not provide nor mandate a comprehensive application configuration language/system (e.g., [jsonnet](https://github.com/google/jsonnet)).
 * Kubernetes does not provide nor adopt any comprehensive machine configuration, maintenance, management, or self-healing systems.
 
-On the other hand, a number of PaaS systems run *on* Kubernetes, such as [Openshift](https://github.com/openshift/origin), [Deis](http://deis.io/), and [Gondor](https://gondor.io/). You could also roll your own custom PaaS, integrate with a CI system of your choice, or get along just fine with just Kubernetes: bring your container images and deploy them on Kubernetes.
+On the other hand, a number of PaaS systems run *on* Kubernetes, such as [Openshift](https://github.com/openshift/origin), [Deis](http://deis.io/), and [Eldarion Cloud](http://eldarion.cloud/). You could also roll your own custom PaaS, integrate with a CI system of your choice, or get along just fine with just Kubernetes: bring your container images and deploy them on Kubernetes.
 
 Since Kubernetes operates at the application level rather than at just the hardware level, it provides some generally applicable features common to PaaS offerings, such as deployment, scaling, load balancing, logging, monitoring, etc. However, Kubernetes is not monolithic, and these default solutions are optional and pluggable.
 

@@ -47,7 +47,7 @@ kubectl scale statefulsets <stateful-set-name> --replicas=<new-replicas>
 
 #### Alternative: `kubectl apply` / `kubectl edit` / `kubectl patch`
 
-Alternatively, you can do [in-place updates](/docs/user-guide/managing-deployments/#in-place-updates-of-resources) on your StatefulSets. 
+Alternatively, you can do [in-place updates](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/managing-deployments.md/#in-place-updates-of-resources) on your StatefulSets. 
 
 If your StatefulSet was initially created with `kubectl apply` or `kubectl create --save-config`, 
 update `.spec.replicas` of the StatefulSet manifests, and then do a `kubectl apply`:
@@ -94,7 +94,7 @@ completely healthy.
 
 {% capture whatsnext %}
 
-Learn more about [deleting a StatefulSet](/docs/tasks/manage-stateful-set/deleting-a-statefulset/).
+Learn more about [deleting a StatefulSet](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/tasks/manage-stateful-set/deleting-a-statefulset.md/).
 
 {% endcapture %}
 

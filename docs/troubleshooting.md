@@ -10,8 +10,8 @@ title: Support
 Sometimes things go wrong. This guide is aimed at making them right. It has
 two sections:
 
-   * [Troubleshooting your application](/docs/user-guide/application-troubleshooting) - Useful for users who are deploying code into Kubernetes and wondering why it is not working.
-   * [Troubleshooting your cluster](/docs/admin/cluster-troubleshooting) - Useful for cluster administrators and people whose Kubernetes cluster is unhappy.
+   * [Troubleshooting your application](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/application-troubleshooting.md) - Useful for users who are deploying code into Kubernetes and wondering why it is not working.
+   * [Troubleshooting your cluster](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/admin/cluster-troubleshooting.md) - Useful for cluster administrators and people whose Kubernetes cluster is unhappy.
 
 You should also check the known issues for the [release](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md)
 you're using.

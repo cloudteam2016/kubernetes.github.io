@@ -8,7 +8,7 @@ This page shows how to create a new topic for the Kubernetes docs.
 
 {% capture prerequisites %}
 Create a fork of the Kubernetes documentation repository as described in
-[Creating a Documentation Pull Request](/docs/contribute/create-pull-request/).
+[Creating a Documentation Pull Request](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/create-pull-request/).
 {% endcapture %}
 
 {% capture steps %}
@@ -38,7 +38,7 @@ is the best fit for your content:
 </table>
 
 Each page type has a
-[template](/docs/contribute/page-templates/)
+[template](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/page-templates/)
 that you can use as you write your topic.
 Using templates helps ensure consistency among topics of a given type.
 
@@ -47,7 +47,7 @@ Using templates helps ensure consistency among topics of a given type.
 Choose a title that has the keywords you want search engines to find.
 Create a filename that uses the words in your title separated by hyphens.
 For example, the topic with title
-[Using an HTTP Proxy to Access the Kubernetes API](/docs/tasks/access-kubernetes-api/http-proxy-access-api/)
+[Using an HTTP Proxy to Access the Kubernetes API](https://github.com/kubernetes/kubernetes.github.io/docs/tasks/access-kubernetes-api/http-proxy-access-api/)
 has filename `http-proxy-access-api.md`. You don't need to put
 "kubernetes" in the filename, because "kubernetes" is already in the
 URL for the topic, for example:
@@ -110,7 +110,7 @@ Here's an example of a command that creates an API object from a configuration f
     kubectl create -f http://k8s.io/docs/tutorials/stateful-application/gce-volume.yaml
 
 For an example of a topic that uses this technique, see
-[Running a Single-Instance Stateful Application](/docs/tutorials/stateful-application/run-stateful-application/).
+[Running a Single-Instance Stateful Application](https://github.com/kubernetes/kubernetes.github.io/docs/tutorials/stateful-application/run-stateful-application/).
 
 ### Adding images to a topic
 
@@ -120,9 +120,9 @@ image format is SVG.
 {% endcapture %}
 
 {% capture whatsnext %}
-* Learn about [using page templates](/docs/contribute/page-templates/).
-* Learn about [staging your changes](/docs/contribute/stage-documentation-changes).
-* Learn about [creating a pull request](/docs/contribute/create-pull-request/).
+* Learn about [using page templates](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/page-templates/).
+* Learn about [staging your changes](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/stage-documentation-changes).
+* Learn about [creating a pull request](https://github.com/kubernetes/kubernetes.github.io/docs/contribute/create-pull-request/).
 {% endcapture %}
 
 {% include templates/task.md %}

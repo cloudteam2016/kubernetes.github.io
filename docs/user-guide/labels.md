@@ -16,7 +16,7 @@ Each object can have a set of key/value labels defined.  Each Key must be unique
 }
 ```
 
-We'll eventually index and reverse-index labels for efficient queries and watches, use them to sort and group in UIs and CLIs, etc. We don't want to pollute labels with non-identifying, especially large and/or structured, data. Non-identifying information should be recorded using [annotations](/docs/user-guide/annotations).
+We'll eventually index and reverse-index labels for efficient queries and watches, use them to sort and group in UIs and CLIs, etc. We don't want to pollute labels with non-identifying, especially large and/or structured, data. Non-identifying information should be recorded using [annotations](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/annotations.md).
 
 * TOC
 {:toc}
@@ -154,7 +154,7 @@ this selector (respectively in `json` or `yaml` format) is equivalent to `compon
 
 #### Resources that support set-based requirements
 
-Newer resources, such as [`Job`](/docs/user-guide/jobs), [`Deployment`](/docs/user-guide/deployments/), [`Replica Set`](/docs/user-guide/replicasets/), and [`Daemon Set`](/docs/admin/daemons/), support _set-based_ requirements as well.
+Newer resources, such as [`Job`](/docs/user-guide/jobs), [`Deployment`](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/deployments.md), [`Replica Set`](/docs/user-guide/replicasets/), and [`Daemon Set`](https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/admin/daemons.md/), support _set-based_ requirements as well.
 
 ```yaml
 selector:
