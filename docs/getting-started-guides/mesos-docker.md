@@ -13,26 +13,26 @@ dependencies (etcd & mesos).
 
 ## Cluster Goals
 
-- kubernetes development
-- pod/service development
-- demoing
-- fast deployment
-- minimal hardware requirements
-- minimal configuration
-- entry point for exploration
-- simplified networking
-- fast end-to-end tests
-- local deployment
+- Kubernetes development
+- Pod/service development
+- Demoing
+- Fast deployment
+- Minimal hardware requirements
+- Minimal configuration
+- Entry point for exploration
+- Simplified networking
+- Fast end-to-end tests
+- Local deployment
 
 Non-Goals:
 
-- high availability
-- fault tolerance
-- remote deployment
-- production usage
-- monitoring
-- long running
-- state persistence across restarts
+- High availability
+- Fault tolerance
+- Remote deployment
+- Production usage
+- Monitoring
+- Long running
+- State persistence across restarts
 
 ## Cluster Topology
 
