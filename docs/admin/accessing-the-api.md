@@ -135,7 +135,7 @@ By default the Kubernetes APIserver serves HTTP on 2 ports:
 	    (scheduler, controller-manager) to talk to the API
           - no TLS
           - default port is 8080, change with `--insecure-port` flag.
-          - defaults IP is localhost, change with `--insecure-bind-address` flag.
+          - default IP is localhost, change with `--insecure-bind-address` flag.
           - request **bypasses** authentication and authorization modules.
           - request handled by admission control module(s).
           - protected by need to have host access
@@ -144,7 +144,7 @@ By default the Kubernetes APIserver serves HTTP on 2 ports:
  
           - use whenever possible 
           - uses TLS.  Set cert with `--tls-cert-file` and key with `--tls-private-key-file` flag.
-          - default is port 6443, change with `--secure-port` flag.
+          - default port is 6443, change with `--secure-port` flag.
           - default IP is first non-localhost network interface, change with `--bind-address` flag.
           - request handled by authentication and authorization modules.
           - request handled by admission control module(s).
