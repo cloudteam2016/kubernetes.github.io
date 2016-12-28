@@ -101,9 +101,9 @@ Although the default value of variables in `~/contrib/ansible/group_vars/all.yml
 edit: ~/contrib/ansible/group_vars/all.yml
 ```
 
-**Configure access to kubernetes packages**
+**Configure access to Kubernetes packages**
 
-Modify `source_type` as below to access kubernetes packages through the package manager.
+Modify `source_type` as below to access Kubernetes packages through the package manager.
 
 ```yaml
 source_type: packageManager
@@ -156,7 +156,7 @@ cd ~/contrib/ansible/
 
 That's all there is to it.  It's really that easy.  At this point you should have a functioning Kubernetes cluster.
 
-**Show kubernetes nodes**
+**Show Kubernetes nodes**
 
 Run the following on the kube-master:
 

@@ -30,7 +30,7 @@ Complete API details are documented using [Swagger v1.2](http://swagger.io/) and
 
 We also host a version of the [latest v1.2 API documentation UI](http://kubernetes.io/kubernetes/third_party/swagger-ui/). This is updated with the latest release, so if you are using a different version of Kubernetes you will want to use the spec from your apiserver.
 
-Staring kubernetes 1.4, OpenAPI spec is also available at `/swagger.json`. While we are transitioning from Swagger v1.2 to OpenAPI (aka Swagger v2.0), some of the tools such as kubectl and swagger-ui are still using v1.2 spec. OpenAPI spec is in Beta as of Kubernetes 1.5.
+Staring Kubernetes 1.4, OpenAPI spec is also available at `/swagger.json`. While we are transitioning from Swagger v1.2 to OpenAPI (aka Swagger v2.0), some of the tools such as kubectl and swagger-ui are still using v1.2 spec. OpenAPI spec is in Beta as of Kubernetes 1.5.
 
 Kubernetes implements an alternative Protobuf based serialization format for the API that is primarily intended for intra-cluster communication, documented in the [design proposal](https://github.com/kubernetes/kubernetes/blob/{{ page.githubbranch }}/docs/proposals/protobuf.md) and the IDL files for each schema are located in the Go packages that define the API objects.
 
@@ -51,13 +51,13 @@ Different API versions imply different levels of stability and support.  The cri
 in more detail in the [API Changes documentation](https://github.com/kubernetes/kubernetes/tree/{{page.githubbranch}}/docs/devel/api_changes.md#alpha-beta-and-stable-versions).  They are summarized here:
 
 - Alpha level:
-  - The version names contain `alpha` (e.g. `v1alpha1`).
+  - The version name contains `alpha` (e.g. `v1alpha1`).
   - May be buggy.  Enabling the feature may expose bugs.  Disabled by default.
   - Support for feature may be dropped at any time without notice.
   - The API may change in incompatible ways in a later software release without notice.
   - Recommended for use only in short-lived testing clusters, due to increased risk of bugs and lack of long-term support.
 - Beta level:
-  - The version names contain `beta` (e.g. `v2beta3`).
+  - The version name contains `beta` (e.g. `v2beta3`).
   - Code is well tested.  Enabling the feature is considered safe.  Enabled by default.
   - Support for the overall feature will not be dropped, though details may change.
   - The schema and/or semantics of objects may change in incompatible ways in a subsequent beta or stable release.  When this happens,
@@ -72,7 +72,7 @@ in more detail in the [API Changes documentation](https://github.com/kubernetes/
 
 ## API groups
 
-To make it easier to extend the Kubernetes API, we are in the process of implementing [*API
+To make it easier to extend the Kubernetes APIs, we are in the process of implementing [*API
 groups*](https://github.com/kubernetes/kubernetes/blob/{{page.githubbranch}}/docs/proposals/api-group.md).  These are simply different interfaces to read and/or modify the
 same underlying resources.  The API group is specified in a REST path and in the `apiVersion` field
 of a serialized object.
@@ -84,7 +84,7 @@ Currently there are two API groups in use:
 1. the "extensions" group, which is at REST path `/apis/extensions/$VERSION`, and which uses
   `apiVersion: extensions/$VERSION` (e.g. currently `apiVersion: extensions/v1beta1`).
   This holds types which will probably move to another API group eventually.
-1. the "componentconfig" and "metrics" API groups.
+1. the "component config" and "metrics" API groups.
 
 
 In the future we expect that there will be more API groups, all at REST path `/apis/$API_GROUP` and
